@@ -38,6 +38,21 @@
     flex-shrink: 0;
   }
 
+  @media (max-width: 640px) {
+    body { height: 100dvh; }
+    .main { flex-direction: column; overflow: hidden; }
+    #map { flex: 0 0 50vh; width: 100%; }
+    .sidebar {
+      width: 100%;
+      border-left: none;
+      border-top: 2px solid #2a2a3a;
+      flex: 1;
+      overflow-y: auto;
+    }
+    .header-hint { display: none; }
+    header { padding: 10px 16px; }
+  }
+
   .sidebar-section { padding: 16px 18px; border-bottom: 1px solid #1e1e2e; }
   .sidebar-title { font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: #444; margin-bottom: 12px; }
 
